@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@100&display=swap');
+*{
+    font-family: 'DM sans', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+}
+:root {
+    --text-color: #fff;
+    --text2-color: black;
+    --background: #474747;
+    --background2: #F2AF29;
+}
+/* ::selection {
+    color: var(--text-color);
+    background: var(--background);
+
+}
+a {
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+section{
+    padding: 3rem 0 2rem;
+} */
+.container {
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+body {
+    background: var(--background2);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration-color: #fff;
+}
+a{
+    color: var(--text-color);
+}
+.login {
+    padding: 8px 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    background: var(--background2);
+    color: var(--text2-color);
+    
+}
+.login:hover {
+    background: hsl(24, 98%, 58%);
+    transition: 0.3s;
+}
+.home{
+    width: 100%;
+    min-height: 600px;
+    background: var(--background);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.home-title {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
