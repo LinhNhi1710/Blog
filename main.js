@@ -11,6 +11,7 @@ function signup(e) {
     var json = JSON.stringify(user);
     localStorage.setItem(username, json);
     alert("Sign Up Success");
+    window.location.href = "homepage.html";
 }
 
 function login(e) {
